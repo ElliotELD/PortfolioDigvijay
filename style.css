@@ -23,45 +23,61 @@ body {
 
 .introduction-container {
     width: 100%;
-    /* height: 250px; */
-    /* background-color: #752e2e; */
-    /* border: 2px solid #fff; */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
+}
 
+.introduction-container h1 {
+    font-size: 42px;
+    text-align: center;
+}
+
+.introduction-left,
+.introduction-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .introduction-left {
-    width: 65%;
+    width: 100%;
     background-color: #0D0D0D;
     padding: 34px 44px;
-    /* border: 2px solid #ffffffd9; */
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     border-radius: 48px;
+    margin-bottom: 20px;
 }
 
 .introduction-left-top {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.intro-icon {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    /* gap: 100px; */
+    justify-content: center;
 }
 
 .intro-icon img {
-    width: 100%;
+    width: 100px;
     height: 100px;
     object-fit: contain;
 }
 
 .introduction-left-top-left {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 20px;
-    /* width: 239px; */
-    /* background-color: rebeccapurple; */
 }
 
 .text-gray {
@@ -72,8 +88,8 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    width: 205px;
-    height: 50px;
+    width: 100%;
+    justify-content: center;
 }
 
 .introduction-left-top i {
@@ -84,38 +100,34 @@ body {
     padding-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 15px
+    gap: 15px;
+    align-items: center;
+    text-align: center;
 }
 
 .introduction-left-bottom h2 {
-    font-size: 42px;
+    font-size: 32px;
 }
 
 .introduction-left-bottom p {
-    font-size: 23px;
+    font-size: 18px;
     color: rgba(169, 169, 169, 0.824);
-
 }
 
 .timeless {
     font-weight: 200;
     font-style: italic;
-    /* color: ; */
     color: rgba(255, 255, 255, 0.84);
-
 }
 
 .icon {
-
     cursor: pointer;
-    /* background-color: #000; */
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 6px;
 }
 
 .icon:hover {
-    /* background-color: rgba(255, 255, 255, 0.1); */
     border-width: 3px;
     transition: all ease-in-out 0.2s;
 }
@@ -125,7 +137,6 @@ body {
     background-color: #0D0D0D;
     color: #fff;
     width: 100%;
-    /* background-color: ; */
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 6px;
@@ -134,20 +145,25 @@ body {
 .get-in-touch:hover {
     border-width: 3px;
     transition: all ease-in-out 0.2s;
-
 }
 
 .introduction-right {
-    width: 25%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* height: 40vh; */
     background: radial-gradient(circle at 50% 11%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
     box-shadow: inset 0px 20px 8px -30px black;
     border-radius: 48px;
-    /* backdrop-filter: blur(10px); */
-
+    margin-bottom: 20px;
 }
 
 .introduction-right img {
     width: 100%;
+    height: 40vh;
+    object-fit: contain;
     border-radius: 50px;
 }
 
@@ -156,26 +172,21 @@ body {
     margin-bottom: 50px;
     width: 100%;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
-    justify-content: space-between;
-    /* background-color: red; */
-    margin: 70px 0;
 }
 
 .worked-with-logos {
     background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgba(64, 64, 64, 0.772) 90.2%);
     border-radius: 48px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    padding: 0px 20px;
-    width: auto;
-    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
 }
-
-
 
 .worked-with-logos span {
     opacity: 0.7;
@@ -190,22 +201,20 @@ body {
 .browse-my-work {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    background-color: red;
-    padding: 10px 30px;
+    gap: 20px;
     background-color: #000;
+    padding: 20px;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     margin: 50px 0;
-
 }
 
 .browse-my-work img {
     width: 100%;
-    height: 320px;
+    height: auto;
     object-fit: contain;
     border-radius: 15px;
 }
@@ -214,6 +223,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+    text-align: center;
 }
 
 .browse-my-work button {
@@ -221,7 +232,6 @@ body {
     cursor: pointer;
     background-color: #0D0D0D;
     color: #fff;
-    /* background-color: ; */
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 6px;
@@ -233,11 +243,11 @@ body {
 }
 
 .browse-my-work h2 {
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .browse-my-work p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .card-container {
@@ -245,11 +255,12 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    max-width: 1200px;
+    max-width: 100%;
 }
 
 .card {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     background-color: #1c1c1c;
     border-radius: 12px;
     padding: 16px;
@@ -266,8 +277,6 @@ body {
 
 .card img {
     width: 100%;
-    /* height: 300px; */
-    /* object-fit: contain; */
     border-radius: 8px;
     margin-bottom: 16px;
 }
@@ -290,9 +299,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle,
-            rgba(255, 255, 255, 0.15),
-            transparent);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent);
     z-index: -1;
     transition: opacity 0.3s ease;
 }
@@ -302,16 +309,14 @@ body {
 }
 
 .how-left {
-    /* background-color: red; */
-    width: 50%;
-
+    width: 100%;
 }
 
 .how {
     display: flex;
+    flex-direction: column;
     gap: 30px;
-    /* gap: 30px; */
-    width: 90%;
+    width: 100%;
 }
 
 .how-left,
@@ -319,43 +324,37 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
+    text-align: center;
 }
 
-
 .price {
-    /* cursor: pointer; */
     background-color: #0D0D0D;
     color: #fff;
     width: 100%;
-    /* background-color: ; */
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 2px;
-
 }
 
 .footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    /* background-color: red; */
     gap: 6px;
 }
 
 .footer span {
     width: 200px;
-    /* padding: 50px 0; */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-
 }
 
 .footer span i {
     cursor: pointer;
-    /* background-color: #000; */
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 6px;
@@ -367,17 +366,76 @@ body {
 }
 
 .footer-copyright {
-    /* background-color: rebeccapurple; */
     display: flex;
     justify-content: center;
 }
 
 .footer-copyright p {
     margin: 30px 0;
-
 }
 
 .footer-copyright a {
     text-decoration: none;
     color: #fff;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .introduction-container {
+        flex-direction: row;
+    }
+
+    .introduction-left,
+    .introduction-right {
+        width: 50%;
+    }
+
+    .introduction-left-top {
+        flex-direction: row;
+    }
+
+    .introduction-left-top-left {
+        flex-direction: row;
+    }
+
+    .introduction-left-bottom {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .browse-my-work {
+        flex-direction: row;
+    }
+
+    .browse-my-work-left,
+    .browse-my-work-right {
+        width: 50%;
+    }
+
+    .how {
+        flex-direction: row;
+    }
+
+    .how-left,
+    .how-right {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .introduction-left-bottom h2 {
+        font-size: 42px;
+    }
+
+    .introduction-left-bottom p {
+        font-size: 23px;
+    }
+
+    .browse-my-work h2 {
+        font-size: 40px;
+    }
+
+    .browse-my-work p {
+        font-size: 14px;
+    }
 }
